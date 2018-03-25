@@ -1,23 +1,74 @@
+.MobPage{
+    position: relative;
+}
 .header{
-    height: .4rem;
+    height: .8rem;
+    width: 100%;
     background: #d53c34;
     display: flex;
     flex-direction: row;
+    position: fixed;
+    top: 0;
 }
 .header .HeaderLeftIcon{
     flex: 1;
 }
 .header .SearchBox{
     flex: 8;
+    margin: .1rem 0;
+    border-radius: 7%; 
+    background: white;
 }
 .header .HeaderRightIcon{
     flex: 1;
-    background: url(./assets/images/header.png);
-    background-size: cover;
 }
-.MainBody{
+.header .HeaderRightIcon img{
+    margin: .1rem;
+    height: .6rem;
+    width: .6rem;
+}
+.MobPage .MainBody{
+    top: .8rem;
+    position: absolute;
+    width: 100%;
+}
+
+.MainBody .Icon{
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.Icon .IconItem{
     flex: 1;
-    /* 神奇的一段代码 */
-    height: 0;
-    overflow-y: scroll;
+    margin: .4rem;
+    flex-direction: column;
+}
+.Icon .ImgBorder{
+    border: 2px solid #d57778;
+    border-radius: 100%;
+    width:100%;
+    height:100%;
+    position: relative;
+    flex: 6;
+}
+.ImgBorder img{
+    height: 75%;
+    width: 75%;
+    position: absolute;
+    top: .15rem;
+    left: .15rem;
+}
+.IconItem .IconWords{
+    margin: .01rem;
+    display: block;
+    position: absolute;
+    flex: 1;
+    color: #dddddd;
+    font-size: .3rem;
+}
+
+.swiper-wrapper .swiper-slide img{
+    width: 100%;
+    height: 3rem;
 }

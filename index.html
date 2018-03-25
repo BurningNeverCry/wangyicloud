@@ -6,40 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>YunMusic</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/font.css">
     <link rel="stylesheet" href="./assets/css/swiper.min.css">
     <link rel="stylesheet" href="./assets/css/IndexStyle.css">
     <script>
-            var deviceWidth = document.documentElement.clientWidth;
-            if (deviceWidth > 750) deviceWidth = 750;
-            document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+        var deviceWidth = document.documentElement.clientWidth;
+        if (deviceWidth > 750) deviceWidth = 750;
+        document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
     </script>
 </head>
 
 <body>
     <div class="MobPage">
-        <header class="header">
+        <div class="header">
             <div class="HeaderLeftIcon"></div>
             <div class="SearchBox"></div>
             <div class="HeaderRightIcon">
                 <a href="#">
-                    <img src="" alt="">
+                    <img src="./assets/images/header.png">
                 </a>
             </div>
-        </header>
+        </div>
         <div class="MainBody">
             <!-- Swiper -->
             <div class="swiper-container swiper-container-horizontal">
-                <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-1620px, 0px, 0px);">
-                    <div class="swiper-slide" style="width: 375px; margin-right: 30px;">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
                         <img src="./assets/images/pic01.jpg">
                     </div>
-                    <div class="swiper-slide" style="width: 375px; margin-right: 30px;">
+                    <div class="swiper-slide">
                         <img src="./assets/images/pic02.jpg">
                     </div>
-                    <div class="swiper-slide" style="width: 375px; margin-right: 30px;">
+                    <div class="swiper-slide">
                         <img src="./assets/images/pic03.jpg">
                     </div>
-                    <div class="swiper-slide" style="width: 375px; margin-right: 30px;">
+                    <div class="swiper-slide">
                         <img src="./assets/images/pic04.jpg">
                     </div>
                 </div>
@@ -51,8 +54,43 @@
                     <span class="swiper-pagination-bullet"></span>
                 </div>
             </div>
-            <div class="Icon"></div>
-            <div class="RecommandList"></div>
+            <div class="Icon">
+                <div class="IconItem">
+                    <div class="ImgBorder">
+                        <img src="./assets/images/icon.png">
+                    </div>
+                    <span class="IconWords">我的音乐</span>
+                </div>
+                <div class="IconItem">
+                    <div class="ImgBorder">
+                        <img src="./assets/images/icon.png">
+                    </div>
+                    <span class="IconWords">我的音乐</span>
+                </div>
+                <div class="IconItem">
+                    <div class="ImgBorder">
+                        <img src="./assets/images/icon.png">
+                    </div>
+                    <span class="IconWords">我的音乐</span>
+                </div>
+                <div class="IconItem">
+                    <div class="ImgBorder">
+                        <img src="./assets/images/icon.png">
+                    </div>
+                    <span class="IconWords">我的音乐</span>
+                </div>
+            </div>
+            <div class="RecommandList">
+                <div class="StdBoxContainer">
+                    <div class="TopWords"></div>
+                    <div class="StdBoxList">
+                        <div class="StdBox">
+                            <img src="" alt="">
+                            <span class="BottomWords"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="NewMusicList"></div>
             <div class="RadioList"></div>
             <div class="SpColumn"></div>
@@ -63,12 +101,18 @@
     <script>
         //Initialize Swiper
         var swiper = new Swiper('.swiper-container', {
-            spaceBetween: 30,
+            spaceBetween: 0,
+            loop: true,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
             },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
         });
+
 
     </script>
 </body>
