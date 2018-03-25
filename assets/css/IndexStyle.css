@@ -1,0 +1,23 @@
+.header{
+    height: .4rem;
+    background: #d53c34;
+    display: flex;
+    flex-direction: row;
+}
+.header .HeaderLeftIcon{
+    flex: 1;
+}
+.header .SearchBox{
+    flex: 8;
+}
+.header .HeaderRightIcon{
+    flex: 1;
+    background: url(./assets/images/header.png);
+    background-size: cover;
+}
+.MainBody{
+    flex: 1;
+    /* 神奇的一段代码 */
+    height: 0;
+    overflow-y: scroll;
+}

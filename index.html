@@ -1,78 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
-=======
 
->>>>>>> future
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>YunMusic</title>
+    <link rel="stylesheet" href="./assets/css/swiper.min.css">
+    <link rel="stylesheet" href="./assets/css/IndexStyle.css">
+    <script>
+            var deviceWidth = document.documentElement.clientWidth;
+            if (deviceWidth > 750) deviceWidth = 750;
+            document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+    </script>
 </head>
-<<<<<<< HEAD
-<body>
-    <div class="MobPage">
-        <header></header>
-        <div class="MainBody">
-=======
 
 <body>
     <div class="MobPage">
-        <header>
+        <header class="header">
+            <div class="HeaderLeftIcon"></div>
             <div class="SearchBox"></div>
+            <div class="HeaderRightIcon">
+                <a href="#">
+                    <img src="" alt="">
+                </a>
+            </div>
         </header>
         <div class="MainBody">
-        <!-- Swiper -->
+            <!-- Swiper -->
             <div class="swiper-container swiper-container-horizontal">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="./assets/images/pic01.jpg">
-                        </div>
-                        <div class="swiper-slide">
-                                <img src="./assets/images/pic02.jpg">
-                        </div>
-                        <div class="swiper-slide">
-                                <img src="./assets/images/pic03.jpg">
-                        </div>
-                        <div class="swiper-slide">
-                                <img src="./assets/images/pic04.jpg">
-                        </div>
+                <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-1620px, 0px, 0px);">
+                    <div class="swiper-slide" style="width: 375px; margin-right: 30px;">
+                        <img src="./assets/images/pic01.jpg">
                     </div>
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
-                        <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
-                        <span class="swiper-pagination-bullet"></span>
-                        <span class="swiper-pagination-bullet"></span>
-                        <span class="swiper-pagination-bullet"></span>
-                        
+                    <div class="swiper-slide" style="width: 375px; margin-right: 30px;">
+                        <img src="./assets/images/pic02.jpg">
+                    </div>
+                    <div class="swiper-slide" style="width: 375px; margin-right: 30px;">
+                        <img src="./assets/images/pic03.jpg">
+                    </div>
+                    <div class="swiper-slide" style="width: 375px; margin-right: 30px;">
+                        <img src="./assets/images/pic04.jpg">
                     </div>
                 </div>
->>>>>>> future
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+                    <span class="swiper-pagination-bullet  swiper-pagination-bullet-active"></span>
+                    <span class="swiper-pagination-bullet"></span>
+                    <span class="swiper-pagination-bullet"></span>
+                    <span class="swiper-pagination-bullet"></span>
+                </div>
+            </div>
             <div class="Icon"></div>
             <div class="RecommandList"></div>
             <div class="NewMusicList"></div>
             <div class="RadioList"></div>
             <div class="SpColumn"></div>
         </div>
-<<<<<<< HEAD
-        
     </div>
+    <!-- Swiper JS -->
+    <script src="./assets/js/swiper.min.js"></script>
     <script>
-        var swiper = new Swiper('.swiper-container', {
-      spaceBetween: 30,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-    });
-  
-    </script>        
-=======
-
-    </div>
-    <script src="../dist/js/swiper.min.js"></script>
-    <script>
+        //Initialize Swiper
         var swiper = new Swiper('.swiper-container', {
             spaceBetween: 30,
             pagination: {
@@ -82,7 +71,6 @@
         });
 
     </script>
->>>>>>> future
 </body>
 
 </html>
