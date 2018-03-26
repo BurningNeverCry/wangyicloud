@@ -82,10 +82,10 @@
             </div>
             <div class="RecommandList">
                 <div class="StdBoxContainer">
-                    <div class="TopWords"></div>
+                    <div class="TopWords">推荐歌单<span>></span></div>
                     <div class="StdBoxList">
                         <div class="StdBox">
-                            <img src="" alt="">
+                            <span class="PopNumber"></span>
                             <span class="BottomWords"></span>
                         </div>
                     </div>
@@ -112,8 +112,8 @@
                 prevEl: '.swiper-button-prev',
             },
         });
-
-
+        var oTmp = document.getElementsByClassName('StdBox')[0];
+        oTmp.style.height = oTmp.style.width;
     </script>
 </body>
 
