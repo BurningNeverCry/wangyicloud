@@ -62,7 +62,7 @@
     left: .15rem;
 }
 .IconItem .IconWords{
-    margin: .01rem;
+    margin: .1rem 0;
     display: block;
     position: absolute;
     flex: 1;
@@ -75,7 +75,7 @@
     height: 3rem;
 }
 
-.RecommandList .StdBoxContainer{
+.StdBoxContainer{
     font-size: .24rem;
     color: #848484;
     margin-top: .6rem; 
@@ -84,6 +84,7 @@
     font-size: .32rem;
     padding-left: .2rem;
     border-left: 1px solid #db6259;
+    margin-bottom: .2rem;
 }
 .StdBoxContainer .TopWords span{
     margin-left: .1rem;
@@ -91,19 +92,33 @@
 }
 
 .StdBoxContainer .StdBoxList .StdBox{
-    background: url();
-    background-size: cover;
     position: relative; 
-    width: 33%;
+    float: left;
+    margin-right: .1rem;
+    margin-bottom: .1rem;
+    width: 32%;
 }
-.StdBoxList .PopNumber{
+.StdBox .PopNumber{
     position: absolute;
     display: block;
     right: .1rem;
     top: .05rem;
+    height: .24rem;
 }
-.StdBoxList .BottomWords{
-    position: absolute;
+.StdBox .PopNumber img{
+    display: inline-block;
+    height: 100%;
+    width: auto;
+}
+.StdBox img{
+    width: 100%;
+    height: 100%;
+}
+.StdBoxContainer .StdBoxList .DisMarginRight{
+    margin-right: 0;
+}
+.StdBox .BottomWords{
     display: block;
-    bottom: 0;
+    margin-top: .1rem;
+    margin-bottom: .1rem;
 }
