@@ -80,13 +80,13 @@
     color: #848484;
     margin-top: .6rem; 
 }
-.StdBoxContainer .TopWords{
+.TopWords{
     font-size: .32rem;
     padding-left: .2rem;
     border-left: 1px solid #db6259;
     margin-bottom: .2rem;
 }
-.StdBoxContainer .TopWords span{
+.TopWords span{
     margin-left: .1rem;
     display: inline-block;
 }
@@ -121,4 +121,27 @@
     display: block;
     margin-top: .1rem;
     margin-bottom: .1rem;
+}
+.margin-left{
+    margin-left: .12rem;
+}
+.SpColumn .SpList{
+
+}
+.SpItem .SpWords{
+
+}
+.SpItem .Words{
+
+}
+.SpItem .ReadNumber{
+
+}
+.SpItem .Splan{
+    color: #f69da1;
+    border: 1px solid red;
+    font-size: .2rem;
+    height: .25rem;
+    line-height: .3rem;
+    display: inline-block;
 }
