@@ -8,6 +8,7 @@
     display: flex;
     flex-direction: row;
     position: fixed;
+    z-index: 100;
     top: 0;
 }
 .header .HeaderLeftIcon{
@@ -31,6 +32,8 @@
     top: .8rem;
     position: absolute;
     width: 100%;
+    height: auto;
+    overflow: hidden;
 }
 
 .MainBody .Icon{
@@ -81,6 +84,7 @@
     margin-top: .6rem; 
 }
 .TopWords{
+    overflow: hidden;
     font-size: .32rem;
     padding-left: .2rem;
     border-left: 1px solid #db6259;
@@ -90,7 +94,6 @@
     margin-left: .1rem;
     display: inline-block;
 }
-
 .StdBoxContainer .StdBoxList .StdBox{
     position: relative; 
     float: left;
@@ -128,20 +131,41 @@
 .SpColumn .SpList{
 
 }
+.SpList .SpItem{
+    height: 2rem;
+    border-top: 1px solid #848484;
+    font-size: .15rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
 .SpItem .SpWords{
 
 }
 .SpItem .Words{
-
+    display: block;
+    flex: 6;
+    margin: .15rem;
+}
+.SpItem .Words span{
+    font-size: .3rem;
 }
 .SpItem .ReadNumber{
-
+    position: absolute;
+    bottom: .2rem;
+    left: .2rem;
 }
 .SpItem .Splan{
-    color: #f69da1;
+    color: red;
     border: 1px solid red;
-    font-size: .2rem;
-    height: .25rem;
+    height: .3rem;
     line-height: .3rem;
     display: inline-block;
+}
+.SpItem img{
+    height: 100%;
+    flex: 1;
+    display: block;
+    top: 0;
+    right: 0;
 }

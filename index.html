@@ -82,7 +82,9 @@
             </div>
             <div class="RecommandList">
                 <div class="StdBoxContainer">
-                    <div class="TopWords">推荐歌单<span>></span></div>
+                    <div class="TopWords">推荐歌单
+                        <span>></span>
+                    </div>
                     <div class="StdBoxList">
                         <div class="StdBox">
                             <span class="PopNumber">
@@ -192,7 +194,9 @@
             </div>
             <div class="RadioList">
                 <div class="StdBoxContainer">
-                    <div class="TopWords">推荐歌单<span>></span></div>
+                    <div class="TopWords">推荐歌单
+                        <span>></span>
+                    </div>
                     <div class="StdBoxList">
                         <div class="StdBox">
                             <span class="PopNumber">
@@ -246,37 +250,69 @@
                 </div>
             </div>
             <div class="SpColumn">
-                <div class="TopWords margin-left">精选专栏<span>></span></div>
+                <div class="TopWords margin-left">精选专栏
+                    <span>></span>
+                </div>
                 <div class="SpList">
                     <div class="SpItem">
                         <div class="SpWords">
-                            <div class="Words"><div class="Splan"></div></div>
-                            <div class="ReadNumber"></div>
+                            <div class="Words">
+                                <div class="Splan">专栏</div>
+                                <span>Sunday's coming I wanna drive my car, to your apartment with present like a star</span>
+                            </div>
+                            <div class="ReadNumber">
+                                <span>阅读</span>
+                                <span>1100万</span>
+                            </div>
                         </div>
-                        <img src="./assets/images/bot01.jpg">
+                        <img src="./assets/images/bot01.png">
+                    </div>
+                    <div class="SpItem">
+                        <div class="SpWords">
+                            <div class="Words">
+                                <div class="Splan">专栏</div>
+                                <span>Sunday's coming I wanna drive my car, to your apartment with present like a star</span>
+                            </div>
+                            <div class="ReadNumber">
+                                <span>阅读</span>
+                                <span>1100万</span>
+                            </div>
+                        </div>
+                        <img src="./assets/images/bot01.png">
+                    </div>
+                    <div class="SpItem">
+                        <div class="SpWords">
+                            <div class="Words">
+                                <div class="Splan">专栏</div>
+                                <span>Sunday's coming I wanna drive my car, to your apartment with present like a star</span>
+                            </div>
+                            <div class="ReadNumber">
+                                <span>阅读</span>
+                                <span>1100万</span>
+                            </div>
+                        </div>
+                        <img src="./assets/images/bot01.png">
                     </div>
                 </div>
+            </div>
         </div>
-    </div>
-    <!-- Swiper JS -->
-    <script src="./assets/js/swiper.min.js"></script>
-    <script>
-        //Initialize Swiper
-        var swiper = new Swiper('.swiper-container', {
-            spaceBetween: 0,
-            loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-        var oTmp = document.getElementsByClassName('StdBox')[0];
-        oTmp.style.height = oTmp.style.width;
-    </script>
+        <!-- Swiper JS -->
+        <script src="./assets/js/swiper.min.js"></script>
+        <script>
+            //Initialize Swiper
+            var swiper = new Swiper('.swiper-container', {
+                spaceBetween: 0,
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
 </body>
 
 </html>
