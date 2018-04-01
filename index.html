@@ -33,18 +33,7 @@
             <!-- Swiper -->
             <div class="swiper-container swiper-container-horizontal">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="./assets/images/pic01.jpg">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./assets/images/pic02.jpg">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./assets/images/pic03.jpg">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./assets/images/pic04.jpg">
-                    </div>
+
                 </div>
                 <!-- Add Pagination -->
                 <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
@@ -86,60 +75,15 @@
                         <span>></span>
                     </div>
                     <div class="StdBoxList">
-                        <div class="StdBox">
-                            <span class="PopNumber">
-                                <img src="./assets/images/earphone.jpg">
-                                <span>1100万</span>
-                            </span>
-                            <img src="./assets/images/poster.jpg">
-                            <span class="BottomWords">新歌推荐呀新歌推荐，凑字数</span>
-                        </div>
-                        <div class="StdBox">
-                            <span class="PopNumber">
-                                <img src="./assets/images/earphone.jpg">
-                                <span>1100万</span>
-                            </span>
-                            <img src="./assets/images/poster.jpg">
-                            <span class="BottomWords">新歌推荐呀新歌推荐，凑字数</span>
-                        </div>
-                        <div class="StdBox DisMarginRight">
-                            <span class="PopNumber">
-                                <img src="./assets/images/earphone.jpg">
-                                <span>1100万</span>
-                            </span>
-                            <img src="./assets/images/poster.jpg">
-                            <span class="BottomWords">新歌推荐呀新歌推荐，凑字数</span>
-                        </div>
-                        <div class="StdBox">
-                            <span class="PopNumber">
-                                <img src="./assets/images/earphone.jpg">
-                                <span>1100万</span>
-                            </span>
-                            <img src="./assets/images/poster.jpg">
-                            <span class="BottomWords">新歌推荐呀新歌推荐，凑字数</span>
-                        </div>
-                        <div class="StdBox">
-                            <span class="PopNumber">
-                                <img src="./assets/images/earphone.jpg">
-                                <span>1100万</span>
-                            </span>
-                            <img src="./assets/images/poster.jpg">
-                            <span class="BottomWords">新歌推荐呀新歌推荐，凑字数</span>
-                        </div>
-                        <div class="StdBox  DisMarginRight">
-                            <span class="PopNumber">
-                                <img src="./assets/images/earphone.jpg">
-                                <span>1100万</span>
-                            </span>
-                            <img src="./assets/images/poster.jpg">
-                            <span class="BottomWords">新歌推荐呀新歌推荐，凑字数</span>
-                        </div>
+
                     </div>
                 </div>
             </div>
             <div class="NewMusicList">
                 <div class="StdBoxContainer">
-                    <div class="TopWords">推荐歌单<span>></span></div>
+                    <div class="TopWords">推荐歌单
+                        <span>></span>
+                    </div>
                     <div class="StdBoxList">
                         <div class="StdBox">
                             <span class="PopNumber">
@@ -296,6 +240,49 @@
                 </div>
             </div>
         </div>
+        <script src="./assets/index-data.json"></script>
+        <script src="./assets/js/jquery-1.10.2.js"></script>
+        <script>
+            /* swiper 填充 */
+            var times = IndexData.SwiperPhNum;
+            var oSwiper = document.getElementsByClassName('swiper-wrapper')[0];
+            for (var i = 0; i < times; i++) {
+                var str = "<div class=\"swiper-slide\">" +
+                    "<img src=\"" + IndexData.SwiperPhUrl[i] + "\">" +
+                    "</div>";
+                oSwiper.innerHTML += str;
+            }
+
+            /* RecommandList 填充 */
+            var oRecTar = $(".RecommandList > .StdBoxContainer > .StdBoxList");
+            times = IndexData.RecSize;
+            var str = [];
+            for (var i = 0; i < times; i++) {
+                if (i < times - 1)
+                    str.push.apply(str,["<div class=\"StdBox\">",
+                        "<span class=\"PopNumber\">",
+                        "<img src=\"./assets/images/earphone.jpg\" style=\"height: .2rem;display: inline\">",
+                        "<span>" + IndexData.RecPopNum[i] + "</span>",
+                        "</span>",
+                        "<img src=\"" + IndexData.RecPhUrl[i] + "\">",
+                        "<span class=\"BottomWords\">" + IndexData.RecBotWord[i] + "</span>",
+                        "</div>"]);
+                else
+                    str.push.apply(str,["<div class=\"StdBox DisMarginRight\">",
+                        "<span class=\"PopNumber\">",
+                        "<img src=\"./assets/images/earphone.jpg\" style=\"height: .4rem;\">",
+                        "<span>" + IndexData.RecPopNum[i] + "</span>",
+                        "</span>",
+                        "<img src=\"" + IndexData.RecPhUrl[i] + "\">",
+                        "<span class=\"BottomWords\">" + IndexData.RecBotWord[i] + "</span>",
+                        "</div>"]);
+                        console.log(str);
+                
+            }
+            console.log(str.join(""));
+            oRecTar.html(str.join(""));
+
+        </script>
         <!-- Swiper JS -->
         <script src="./assets/js/swiper.min.js"></script>
         <script>
@@ -313,6 +300,7 @@
                 },
             });
         </script>
+
 </body>
 
 </html>

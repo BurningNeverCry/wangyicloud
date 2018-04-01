@@ -1,0 +1,9 @@
+var IndexData={
+    SwiperPhNum: 4,
+    SwiperPhUrl: ["./assets/images/pic01.jpg", "./assets/images/pic02.jpg", "./assets/images/pic03.jpg", "./assets/images/pic04.jpg"],
+    RecSize: 6,
+    RecPhUrl: ["./assets/images/poster.jpg", "./assets/images/poster.jpg", "./assets/images/poster.jpg", "./assets/images/poster.jpg", "./assets/images/poster.jpg", "./assets/images/poster.jpg"],
+    RecPopNum: ["1100万", "1100万", "1100万", "1100万", "1100万", "1100万"],
+    RecBotWord: ["新歌推荐呀新歌推荐，凑字数", "新歌推荐呀新歌推荐，凑字数", "新歌推荐呀新歌推荐，凑字数", "新歌推荐呀新歌推荐，凑字数", "新歌推荐呀新歌推荐，凑字数", "新歌推荐呀新歌推荐，凑字数"],
+
+};

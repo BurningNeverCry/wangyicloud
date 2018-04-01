@@ -75,7 +75,6 @@
 
 .swiper-wrapper .swiper-slide img{
     width: 100%;
-    height: 3rem;
 }
 
 .StdBoxContainer{
@@ -109,14 +108,11 @@
     height: .24rem;
 }
 .StdBox .PopNumber img{
-    display: inline-block;
+    display: inline;
     height: 100%;
-    width: auto;
+    width: 0;
 }
-.StdBox img{
-    width: 100%;
-    height: 100%;
-}
+
 .StdBoxContainer .StdBoxList .DisMarginRight{
     margin-right: 0;
 }
@@ -128,9 +124,7 @@
 .margin-left{
     margin-left: .12rem;
 }
-.SpColumn .SpList{
 
-}
 .SpList .SpItem{
     height: 2rem;
     border-top: 1px solid #848484;
@@ -138,9 +132,6 @@
     position: relative;
     display: flex;
     flex-direction: row;
-}
-.SpItem .SpWords{
-
 }
 .SpItem .Words{
     display: block;
